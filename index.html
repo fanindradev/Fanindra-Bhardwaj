@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+<title>Fanindra Bhardwaj – Official</title>
+
+<link rel="icon" href="https://static.wixstatic.com/media/370b7d_73ed20de62014021936c378af2ad2984~mv2.png"/>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
+
+body{
+  margin:0;
+  font-family:Poppins;
+  color:#fff;
+}
+
+/* ===== LIQUID BACKGROUND ===== */
+.liquid{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+
+  background:
+  radial-gradient(circle at 10% 20%, rgba(255,200,120,.22), transparent 60%),
+  radial-gradient(circle at 80% 70%, rgba(200,160,80,.18), transparent 60%),
+  radial-gradient(circle at 50% 50%, rgba(255,220,150,.12), transparent 70%),
+  #040404;
+
+  filter:blur(120px);
+}
+
+.wrap{ max-width:1180px; margin:20px auto; }
+
+/* ===== CARDS WITH WATER FEEL ===== */
+.glass{
+  background:rgba(255,255,255,.06);
+  backdrop-filter:blur(40px) saturate(160%);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:28px;
+  padding:22px;
+  margin-bottom:20px;
+
+  position:relative;
+  transition:.6s ease;
+  transform-style:preserve-3d;
+}
+
+.glass::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:28px;
+
+  background:
+  linear-gradient(
+    120deg,
+    rgba(255,255,255,.18),
+    rgba(255,255,255,.03),
+    rgba(255,255,255,.18)
+  );
+
+  opacity:.4;
+  animation:water 6s infinite ease-in-out;
+  pointer-events:none;
+}
+
+@keyframes water{
+  0%{ transform:translateX(-10px) translateY(-6px); }
+  50%{ transform:translateX(10px) translateY(6px); }
+  100%{ transform:translateX(-10px) translateY(-6px); }
+}
+
+.glass:hover{
+  transform:
+    translateY(-6px)
+    rotateX(4deg)
+    rotateY(2deg);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.4),
+    inset 0 0 30px rgba(255,255,255,.1);
+}
+
+.hero{text-align:center;}
+.hero img{
+  width:170px;
+  border-radius:50%;
+}
+
+/* ===== BUTTONS ===== */
+.btn{
+  display:inline-block;
+  margin:6px;
+  padding:10px 14px;
+  border-radius:14px;
+  text-decoration:none;
+  color:#fff;
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);
+}
+
+/* ===== GALLERY ===== */
+.gal{ display:flex; gap:12px; overflow-x:auto; }
+.gal img{ width:170px; border-radius:18px; cursor:pointer; }
+
+/* ===== MODAL ===== */
+#modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.94);
+  display:none;
+  align-items:center;
+  justify-content:center;
+}
+
+#modal img{
+  max-width:90%;
+  max-height:90%;
+  object-fit:contain;
+}
+
+/* ===== FORM ===== */
+input, textarea{
+  width:100%;
+  padding:10px;
+  margin:6px 0;
+  border-radius:12px;
+  background:rgba(0,0,0,.3);
+  border:1px solid rgba(255,255,255,.2);
+  color:#fff;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="liquid"></div>
+
+<div class="wrap">
+
+<!-- HEADER -->
+
+<div class="glass hero">
+<img src="https://static.wixstatic.com/media/370b7d_73ed20de62014021936c378af2ad2984~mv2.png"/>
+<h1>Fanindra Bhardwaj</h1>
+<p>MUSIC PRODUCER • COMPOSER • ARTIST</p>
+<p>📞 9680634271 | ✉️ fanindradev@yahoo.com</p>
+</div>
+
+<!-- ===== MUSIC PLATFORMS – ALL ===== -->
+
+<div class="glass">
+<h2>Music Platforms – Worldwide</h2>
+
+<a class="btn" href="https://www.youtube.com/channel/UCizoX3YpTY4QsHsJJbtP-Xg">YouTube</a> <a class="btn" href="https://soundcloud.com/fanindrad">SoundCloud</a> <a class="btn" href="https://music.apple.com/in/artist/fanindra-bhardwaj/1552261725">Apple Music</a> <a class="btn" href="https://music.amazon.in/artists/B0937M9QD1/fanindra-bhardwaj">Amazon Music</a>
+
+<a class="btn" href="https://www.jiosaavn.com/artist/fanindra-bhardwaj-albums/vheufgaGF5Y_">JioSaavn</a> <a class="btn" href="https://gaana.com/artist/fanindra-bhardwaj">Gaana</a>
+
+<a class="btn" href="https://www.melon.com/artist/timeline.htm?artistId=2994961">Melon</a> <a class="btn" href="https://www.genie.co.kr/detail/artistInfo?xxnm=81108267">Genie</a> <a class="btn" href="https://music.bugs.co.kr/artist/12261958">Bugs</a> <a class="btn" href="https://www.music-flo.com/detail/artist/404779538">FLO</a>
+
+<a class="btn" href="https://www.deezer.com/en/artist/130696442">Deezer</a> <a class="btn" href="https://tidal.com/artist/24517629">Tidal</a> <a class="btn" href="https://music.yandex.com/artist/11504122">Yandex</a>
+
+<a class="btn" href="https://audiomack.com/fanindrabhardwaj">Audiomack</a> <a class="btn" href="https://www.beatsource.com/artist/fanindra-bhardwaj/1119048">BeatSource</a> <a class="btn" href="https://www.reverbnation.com/fanindradev">ReverbNation</a>
+
+<a class="btn" href="https://musik.telmore.dk/kunstner/46941253">Telmore</a> <a class="btn" href="https://musik.yousee.dk/kunstner/46941253">YouSee</a> <a class="btn" href="https://se.7digital.com/artist/fanindra-bhardwaj">7Digital</a>
+
+</div>
+
+<!-- ===== SOCIAL – ALL ===== -->
+
+<div class="glass">
+<h2>Connect With Me</h2>
+
+<a class="btn" href="https://instagram.com/fanindrabhardwaj">Instagram</a> <a class="btn" href="https://facebook.com/fanindrabhardwaj">Facebook</a> <a class="btn" href="https://tiktok.com/@fanindradev">TikTok</a> <a class="btn" href="https://x.com/fanindradev">X</a> <a class="btn" href="https://t.me/fanindradev">Telegram</a> <a class="btn" href="https://api.whatsapp.com/send?phone=919680634271">WhatsApp</a> <a class="btn" href="https://linkedin.com/in/fanindradev">LinkedIn</a> <a class="btn" href="https://github.com/fanindradev">GitHub</a> <a class="btn" href="https://discord.com/invite/fanindradev">Discord</a>
+
+</div>
+
+<!-- ===== BOOKING ===== -->
+
+<div class="glass">
+<h2>Booking</h2>
+
+<a class="btn" href="https://cueup.io/de/user/fanindra-bhardwaj-1/booking">CueUp Booking</a>
+
+<a class="btn" href="https://www.bandsintown.com/a/15626051-fanindra-bhardwaj">Bandsintown</a>
+
+</div>
+
+<!-- ===== GALLERY FULL ===== -->
+
+<div class="glass">
+<h2>Gallery</h2>
+
+<div class="gal">
+
+<img onclick="show(this)" src="https://static.wixstatic.com/media/370b7d_59be40c9fb4f4f6289db87cfb25e74e9~mv2.png"/>
+<img onclick="show(this)" src="https://static.wixstatic.com/media/370b7d_24d174e28bf04b8c8e001d8ed8f4c20c~mv2.png"/>
+<img onclick="show(this)" src="https://static.wixstatic.com/media/370b7d_27b94ea45a7f418781178a67acc75838~mv2.png"/>
+<img onclick="show(this)" src="https://static.wixstatic.com/media/370b7d_02d912446c774a7da26ca8839ded755c~mv2.jpeg"/>
+
+<img onclick="show(this)" src="https://static.wixstatic.com/media/370b7d_d4b87f0b0ccd4c088fbf6c323dd6bf4d~mv2.png"/>
+<img onclick="show(this)" src="https://static.wixstatic.com/media/370b7d_73ed20de62014021936c378af2ad2984~mv2.png"/>
+
+</div>
+</div>
+
+<!-- ===== CONTACT ===== -->
+
+<div class="glass">
+<h2>Contact Me</h2>
+
+<form>
+<input placeholder="Your Name"/>
+<input placeholder="Your Email"/>
+<textarea placeholder="Message"></textarea>
+<button class="btn">Send</button>
+</form>
+</div>
+
+<div class="glass" style="text-align:center">
+© Fanindra Bhardwaj • Official Artist Page
+</div>
+
+</div>
+
+<div id="modal" onclick="this.style.display='none'">
+<div id="mc"></div>
+</div>
+
+<script>
+function show(e){
+ modal.style.display='flex';
+ mc.innerHTML='<img src="'+e.src+'">';
+}
+
+const modal=document.getElementById("modal");
+const mc=document.getElementById("mc");
+</script>
+
+</body>
+</html>
